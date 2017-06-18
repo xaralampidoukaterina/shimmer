@@ -21,7 +21,7 @@ public class Plot_Axis extends HttpServlet
         request.setAttribute("filter", "accelometer");
         RequestDispatcher rd = request.getRequestDispatcher("Plot.jsp");
         /** request includes the form and the filter **/
-        rd.include(request, response);
+        rd.forward(request, response);
     }
     /* Method to handle POST method request */
     @Override

@@ -29,9 +29,13 @@ public class FetchData
         {
             try 
             {   /** Get Connection **/
-                String USERNAME = "root";
-                String PASSWORD = "";
-                String CONN_STRING = "jdbc:mysql://localhost:3306/database";
+               // String USERNAME = "root";
+               // String PASSWORD = "";
+               // String CONN_STRING = "jdbc:mysql://localhost:3306/database";
+                
+                  String USERNAME = Statics.USERNAME;
+                  String PASSWORD = Statics.PASSWORD;
+                  String CONN_STRING = Statics.CONN_STRING;
                 Class.forName("com.mysql.jdbc.Driver");
                 connection = (Connection) DriverManager.getConnection(CONN_STRING, USERNAME, PASSWORD);
             } 

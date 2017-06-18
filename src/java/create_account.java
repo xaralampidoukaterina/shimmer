@@ -24,9 +24,12 @@ public class create_account extends HttpServlet
     private String username;
     boolean st = false;
     private int id; 
-    private static final String USERNAME = "root";
+    /*private static final String USERNAME = "root";
     private static final String PASSWORD = "";
-    private static final String CONN_STRING = "jdbc:mysql://localhost:3306/database";
+    private static final String CONN_STRING = "jdbc:mysql://localhost:3306/database";*/
+    String USERNAME = Statics.USERNAME;
+    String PASSWORD = Statics.PASSWORD;
+    String CONN_STRING = Statics.CONN_STRING;
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
@@ -52,7 +55,7 @@ public class create_account extends HttpServlet
                 Component frame = null;
                 JOptionPane.showMessageDialog(frame, "Please try to log in with different username");
                 RequestDispatcher rd = request.getRequestDispatcher("create_account.jsp");
-                rd.include(request, response);
+                rd.forward(request, response);
                 /** Close the connection **/
                 conn.close();
             } 
@@ -70,7 +73,7 @@ public class create_account extends HttpServlet
                 /** Go to Login Page to enter with the new user **/
                 JOptionPane.showMessageDialog(frame, "Please go to Login Page");
                 RequestDispatcher rd = request.getRequestDispatcher("index.html");
-                rd.include(request, response);
+                rd.forward(request, response);
                 conn.close();
             }
         } catch (SQLException e) 
