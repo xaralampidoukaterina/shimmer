@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- 
+    Created By Katerina Charalampidou 
+-->
+<html>
+    <head>
+        <title>Shimmer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index_css.css" type="text/css"> 
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+    </head>
+    <body class="body">
+        <header class ="mainheader">
+            <br>
+            <center><div class="name"><h1>Shimmer Web Application</h1></div></center>
+            <br>
+            <!-- Create Navigation Bar -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Shimmer Web App</a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Login Page</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="create_account.jsp"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <br>
+        <div class="text-center" style="padding:50px 0">
+            <!-- Create Login Form -->
+            <div class="logo">Login </div>
+            <!-- Main Form -->
+            <div class="login-form-1">
+                <form id="login-form" class="text-left" action="Member" name="entrance"   method="POST" accept-charset="UTF-8">
+                    <div class="login-form-main-message"></div>
+                    <div class="main-login-form">
+                        <div class="login-group">
+                            <div class="form-group">
+                                <label for="lg_username" class="sr-only">Username</label>
+                                <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lg_password" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                </form>
+            </div>
+            <!-- end:Main Form -->
+        </div>
+    </body>
+</html>

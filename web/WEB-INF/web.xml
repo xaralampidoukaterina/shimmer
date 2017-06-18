@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
+   
+      <servlet>
+        <servlet-name>getChannels</servlet-name>
+        <servlet-class>getChannels</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Table</servlet-name>
+        <servlet-class>Table</servlet-class>
+    </servlet>
+      <servlet-mapping>
+        <servlet-name>getChannels</servlet-name>
+        <url-pattern>/getChannels</url-pattern>
+    </servlet-mapping>   
+    <servlet-mapping>
+        <servlet-name>Table</servlet-name>
+        <url-pattern>/Table</url-pattern>
+    </servlet-mapping>   
+    <servlet>
+        <servlet-name>Member</servlet-name>
+        <servlet-class>Member</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Member</servlet-name>
+        <url-pattern>/Member</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>create_account</servlet-name>
+        <servlet-class>create_account</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>create_account</servlet-name>
+        <url-pattern>/create_account</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Plot_Axis</servlet-name>
+        <servlet-class>Plot_Axis</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Plot_Axis</servlet-name>
+        <url-pattern>/Plot_Axis</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>        
+</web-app>
